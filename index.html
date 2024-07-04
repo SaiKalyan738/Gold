@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://t4.ftcdn.net/jpg/02/03/62/01/360_F_203620112_nFIRsSG09YzDawG2B1tknFrtgfefuM3Y.jpg" alt="Gold Logo" id="logo-img">
+      </div>
+      
+      <ul class="side-nav-menu" id="SidenavMenu">
+        <li onclick="closeSideBar()">
+          <a href="#" style="display: inline-block; text-decoration: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" style="fill: currentColor;">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item dropdown">
+          <a href="#services" class="nav__link">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#service1">Custom Jewellery Design</a></li>
+            <li><a href="#service2">Repair and Restoration</a></li>
+            <li><a href="#service3">Gemstone Setting</a></li>
+            <li><a href="#service4">Gold Recycling</a></li>
+          </ul>
+        </li>
+        <li class="nav__item dropdown">
+          <a href="#gallery" class="nav__link">Gallery</a>
+          <ul class="dropdown-menu">
+            <li><a href="#gallery1">Rings</a></li>
+            <li><a href="#gallery2">Necklaces</a></li>
+            <li><a href="#gallery3">Bracelet</a></li>
+            <li><a href="#gallery4">Earrings</a></li>
+            <li><a href="#gallery5">Bangles</a></li>
+            <li><a href="#gallery6">Anklets</a></li>
+            <li><a href="#gallery7">Chains</a></li>
+            <li><a href="#gallery8">Pendants</a></li>
+            <li><a href="#gallery9">Danda Vanki</a></li>
+            <li><a href="#gallery10">Waist Belt</a></li>
+            <li><a href="#gallery11">Nose Ring</a></li>
+            <li><a href="#gallery12">Tiaris</a></li>
+            <li><a href="#gallery13">Toe Ring</a></li>
+            <li><a href="#gallery14">Brooches</a></li>
+            <li><a href="#gallery15">Cufflinks</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="btn">Home</a></li>
+        <li><a href="#about" class="btn">About</a></li>
+        <li class="dropdown">
+          <a href="#services" class="btn">Services</a>
+          <ul class="side-dropdown-menu">
+            <li><a href="#service1">Custom Jewellery Design</a></li>
+            <li><a href="#service2">Repair and Restoration</a></li>
+            <li><a href="#service3">Gemstone Setting</a></li>
+            <li><a href="#service4">Gold Recycling</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#gallery" class="btn">Gallery</a>
+          <ul class="side-dropdown-menu">
+            <li><a href="#gallery1">Rings</a></li>
+            <li><a href="#gallery2">Necklaces</a></li>
+            <li><a href="#gallery3">Bracelet</a></li>
+            <li><a href="#gallery4">Earrings</a></li>
+            <li><a href="#gallery5">Bangles</a></li>
+            <li><a href="#gallery6">Anklets</a></li>
+            <li><a href="#gallery7">Chains</a></li>
+            <li><a href="#gallery8">Pendants</a></li>
+            <li><a href="#gallery9">Danda Vanki</a></li>
+            <li><a href="#gallery10">Waist Belt</a></li>
+            <li><a href="#gallery11">Nose Ring</a></li>
+            <li><a href="#gallery12">Tiaris</a></li>
+            <li><a href="#gallery13">Toe Ring</a></li>
+            <li><a href="#gallery14">Brooches</a></li>
+            <li><a href="#gallery15">Cufflinks</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>      
+      
+      <div class="icons">
+        <a href="sign_in.html" class="icon-link"><i class="fa-regular fa-user"></i></a>
+        <div class="shopping" id="cart-icon">
+          <i class="fa-solid fa-cart-shopping fa-beat"></i>
+          <div class="quantity" id="cart-count">0</div>
+        </div>
+        <li class="menu-button" onclick="showSideBar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
+      </div>
+
+    </div>
+  </header>
+  
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+        <div class="left-side">
+          <div class="text-content">
+            <div class="container">
+              <div class="quote" id="quote"></div>
+              <div class="author" id="author"></div>
+            </div>
+          </div>
+          <a href="http://www.dpgold.com/" target="_blank" rel="noreferrer" class="button">View Live Price</a>
+        </div>
+        <div class="right-side">
+          <img class="img" id="slideshow" src="" alt="Slideshow">
+        </div>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+      <div id="about" class="about-section">
+          <h1 class="about-heading">ABOUT ME</h1>
+          <div class="about-container">
+            <div class="left-column">
+              <img class="profile-image" src="assets/about.jpg" alt="about_image">
+              <div class="name-position-experience">
+                <h2>Nadithoka Ramesh</h2>
+                <p>Goldsmith</p>
+                <p>20+ years of Excellence</p>
+              </div>
+            </div>
+            <div class="right-column">
+              <p>Strengths in goldwork include meticulous attention to detail, ensuring every piece is crafted to perfection and mastery of both traditional and contemporary techniques, which allows for the blending of classic craftsmanship with modern design, while extensive experience enables the creation of bespoke jewelry tailored to unique client preferences, proficiency in gemstone setting ensures each stone is securely and beautifully integrated, and dedication to quality and creativity ensures that every piece is a timeless work of art.</p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div id="services" class="services-section">
+      <h1 class="services-heading">OUR SERVICES</h1>
+      <p class="para">Discover the exceptional services we offer to bring your jewellery dreams to life</p>
+      <div class="service-container">
+        <div class="box">
+          <div class="icon-heading">
+            <svg viewBox="0 0 1024 1024" class="featuresIcon">
+              <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"></path>
+            </svg>
+            <h2>Custom Jewellery Design</h2>
+          </div>
+          <p class="service-description">Create unique and personalized jewellery pieces tailored to your style</p>
+        </div>
+  
+        <div class="box">
+          <div class="icon-heading">
+            <svg viewBox="0 0 1024 1024" class="featuresIcon">
+              <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"></path>
+            </svg>
+            <h2>Repair and Restoration</h2>
+          </div>
+          <p class="service-description">Expert repair services to restore your precious jewellery to its original beauty</p>
+        </div>
+  
+        <div class="box">
+          <div class="icon-heading">
+            <svg viewBox="0 0 1024 1024" class="featuresIcon">
+              <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"></path>
+            </svg>
+            <h2>Gemstone Setting</h2>
+          </div>
+          <p class="service-description">Professionally set gemstones in exquisite designs for a stunning finish</p>
+        </div>
+  
+        <div class="box">
+          <div class="icon-heading">
+            <svg viewBox="0 0 1024 1024" class="featuresIcon">
+              <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z"></path>
+            </svg>
+            <h2>Gold Recycling</h2>
+          </div>
+          <p class="service-description">Eco-friendly approach to recycle and repurpose gold into new jewellery creations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+
+  <section id="gallery">
+    <div class="gallery-section">
+        <h1 class="gallery-heading">GALLERY</h1>
+        <main>
+          
+          <div class="slider">
+
+            <div class="product" data-id="1" data-title="Rings" data-price="₹10000">
+              <div class="image">
+                <img src="assets/i1.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Rings</div>
+                <div class="price">Starting at ₹10000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+            
+            <div class="product" data-id="2" data-title="Necklaces" data-price="₹50000">
+              <div class="image">
+                <img src="assets/i2.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Necklaces</div>
+                <div class="price">Starting at ₹50000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="3" data-title="Bracelet" data-price="₹25000">
+              <div class="image">
+                <img src="assets/i3.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Bracelet</div>
+                <div class="price">Starting at ₹25000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="4" data-title="Earrings" data-price="₹20000">
+              <div class="image">
+                <img src="assets/i4.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Earrings</div>
+                <div class="price">Starting at ₹20000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="5" data-title="Bangles" data-price="₹35000">
+              <div class="image">
+                <img src="assets/i5.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Bangles</div>
+                <div class="price">Starting at ₹35000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="6" data-title="Anklets" data-price="₹8000">
+              <div class="image">
+                <img src="assets/i6.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Ankelts</div>
+                <div class="price">Starting at ₹8000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="7" data-title="Chains" data-price="₹20000">
+              <div class="image">
+                <img src="assets/i7.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Chains</div>
+                <div class="price">Starting at ₹20000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="8" data-title="Pendants" data-price="₹10000">
+              <div class="image">
+                <img src="assets/i8.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Pendants</div>
+                <div class="price">Starting at ₹10000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="9" data-title="Danda Vanki" data-price="₹70000">
+              <div class="image">
+                <img src="assets/i9.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Danda Vanki</div>
+                <div class="price">Starting at ₹70000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="10" data-title="Waist Belt" data-price="₹170000">
+              <div class="image">
+                <img src="assets/i10.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Waist Belt</div>
+                <div class="price">Starting at ₹130000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="11" data-title="Nose Ring" data-price="₹8000">
+              <div class="image">
+                <img src="assets/i11.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Nose Ring</div>
+                <div class="price">Starting at ₹8000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="12" data-title="Tiaris" data-price="₹160000">
+              <div class="image">
+                <img src="assets/i12.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Tiaris</div>
+                <div class="price">Starting at ₹25000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="13" data-title="Toe Ring" data-price="₹5000">
+              <div class="image">
+                <img src="assets/i13.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Toe Ring</div>
+                <div class="price">Starting at ₹5000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="14" data-title="Brooches" data-price="₹18000">
+              <div class="image">
+                <img src="assets/i14.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Brooches</div>
+                <div class="price">Starting at ₹18000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+
+            <div class="product" data-id="15" data-title="Cufflinks" data-price="₹25000">
+              <div class="image">
+                <img src="assets/i15.jpg" alt="" class="product-img">
+              </div>
+              <div class="info">
+                <div class="title">Cufflinks</div>
+                <div class="price">Starting at ₹25000</div>
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+            </div>
+          </div>
+
+        </main>
+    </div>
+</section>
+
+<div class="card" id="cart">
+  <h1 class="cart-title">Your Cart</h1>
+  <div class="cart-content"></div>
+  <div class="checkOut">
+      <div class="total">Total : ₹0</div>
+      <div class="closeShopping">Close</div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div id="contact" class="contact-section">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-middle">
+        <div class="contact-title">
+          <h1>CONTACT US</h1>
+        </div>
+        <input type="hidden" name="access_key" value="a1c008bf-a90c-42ea-bbab-c8059e2f504f">
+        <input type="text" name="name" placeholder="Enter your name" class="contact-input" required>
+        <input type="email" name="email" placeholder="Enter your email" class="contact-input" required>
+        <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
